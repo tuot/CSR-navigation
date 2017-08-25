@@ -2,7 +2,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 640px;
+  max-width: 1366px;
+  min-height: 100vh;
   background-color: #F8F8F8;
   position: relative;
 }
@@ -11,7 +12,7 @@
   top: 10px;
   right: 20px;
   cursor: pointer;
-  color: #A4C4BF;
+  color: #177D7F;
   font-size: 1em;
   padding: 2px 5px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -19,13 +20,14 @@
 #github i {
   font-size: 1.25em;
 }
-#github:hover {
-  color: #177D7F;
-}
+
 #logo {
   width: 360px;
   height: 168px; 
   background-image: url("../images/logo.png");
+  background-repeat:no-repeat; 
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
 }
 #input {
   width: 600px;
@@ -39,7 +41,7 @@
   margin: 10px 0;
 }
 #search-text {
-  width: 534px;
+  width: 89%;
   box-sizing: border-box;
   font-size: 1em;
   padding: 6px 12px;
@@ -69,23 +71,21 @@
   box-shadow: 2px 2px 1px 0 #AAA;
   border-radius: 0.3em;
 }
-#search-btn:hover {
-  border-color: #0181C8;
-  color: #FFF;
-  background-color: #0181C8;
-  box-shadow: 0 2px 5px 0 #0181C8, 0 4px 15px 0 #05A1F8;
-}
+
 #method-option {
   width: 530px;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 10px 0;
 }
 #method {
+  width: 64px;
   display: inline-block;
   font-size: 0.94em;
   color: #414141;
 }
 .radio-label {
+  display: inline-block;
   padding: 0 5px;
   font-size: 0.94em;
   color: #414141;
@@ -137,18 +137,13 @@
   border: 1px solid #D1D1D1;
   border-radius: 0.4em;
 }
-.links:hover {
-  color: #0174B3;
-}
+
 .point {
   background-color: #0181C8;
   border-color: #0181C8;
   color: #FFF!important;
 }
-.point:hover {
-  background-color: #0174B3;
-  border-color: #0174B3;
-}
+
 #other-content {
   width: 100%;
   flex-flow: row wrap; 
@@ -170,7 +165,9 @@
   box-shadow: 1px 1px 1px 1px rgba(51, 51, 51, 0.18), 2px 4px 5px 2px rgba(51, 51, 51, 0.15);
 }
 .catalog-title {
-    padding: 15px 0;  
+  width: 100%;
+  padding: 15px 0; 
+  text-align: center; 
 }
 .title-logo, .catalog-title h2 {
   display: inline-block;
@@ -185,13 +182,15 @@
   padding: 8px 0;
   position: relative;
 }
-.item:hover {
-  background-color: #177D7F;
-  color: #FFF;
-  transition: 0.15s;
-}
+
 .catalog-content, .extend {
   width: 100%;
+}
+.unfold {
+  color: #555;
+  position: absolute;
+  right: 20px;
+  display: none!important;
 }
 .extend {
   display: none;
@@ -275,6 +274,18 @@
   border-bottom: 1px dashed #FFF;
   color: #DDD;
 }
-#copyright a:hover {
-  color: #FFF;
+
+@media only screen and (max-width: 768px) {
+  #input {
+    width: 80%;
+  }
+  #search-text {
+    margin-right: 5px;
+  }
+  #method-option {
+    width: 90%;
+  }
+  #options {
+    width: calc(100% - 90px);
+  }
 }

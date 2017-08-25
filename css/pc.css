@@ -1,0 +1,24 @@
+#github:hover {
+  color: #A4C4BF;
+}
+#search-btn:hover {
+  border-color: #0181C8;
+  color: #FFF;
+  background-color: #0181C8;
+  box-shadow: 0 2px 5px 0 #0181C8, 0 4px 15px 0 #05A1F8;
+}
+.links:hover {
+  color: #0174B3;
+}
+.point:hover {
+  background-color: #0174B3;
+  border-color: #0174B3;
+}
+.item:hover {
+  background-color: #177D7F;
+  color: #FFF;
+  transition: 0.15s;
+}
+#copyright a:hover {
+  color: #FFF;
+}

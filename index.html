@@ -1,551 +1,353 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSR导航 | CSR</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="keywords" content="CSR,导航,快速导航,川师,四川师范大学">
-    <meta name="author" content="AQINGC">
-    <link rel="shortcut icon" href="images/navigation.ico" type="image/x-icon">
-    <link rel="icon" href="images/navigation.ico" type="image/x-icon">
-    <base target="_blank" />
-    <style>
-    *{font-family:Hiragino Sans GB}body,div,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,li,ol,p,table,td,ul{margin:0;padding:0;border:0}a{text-decoration:none}ol,ul{list-style-type:none}#content,#footer,#input,#method-option,#other-content,#search,#tips,.entrance-content{display:flex}
-    </style>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div id="content">
-      <a id="github" href="https://github.com/AQingC/CSR-navigation"><i class="fa fa-github fa-1x"></i>&nbsp;GitHub</a>
-      <div id="logo"></div>
-      <div id="input">
-        <form id="search">
-          <input id="search-text" type="text" name="" placeholder="立即搜索" required autocomplete="off">
-          <input id="search-btn" type="submit" value="Search">
-        </form>
-        <div id="method-option">
-          <div id="method">搜索方式:</div>
-          <div id="options">
-            <label class="radio-label"><input type="radio" name="option" value="baidu" checked>百度</label>
-            <label class="radio-label"><input type="radio" name="option" value="google">谷歌</label>
-            <label class="radio-label"><input type="radio" name="option" value="bing">必应</label>
-            <label class="radio-label"><input type="radio" name="option" value="weibo">微博</label>
-            <label class="radio-label"><input type="radio" name="option" value="zhihu">知乎</label>
-            <label class="radio-label"><input type="radio" name="option" value="douban">豆瓣</label>
-            <label class="radio-label"><input type="radio" name="option" value="panci">胖次</label>
-          </div>
-        </div>
-      </div>
-      <div id="tips">
-        <p id="line-one">Tips：输入关键词，选择搜索方式，点击"Search"即可用选择方式进行搜索。</p>
-        <p id="line-two">回车默认为百度搜索。</p>
-      </div>
-    </div>
 
-    <div id="entrance">
-      <div id="school-entrance" class="entrance-content">
-        <div class="entrance-title">川师校园</div>
-        <div id="school-content">
-          <a class="links point" href="http://www.sicnu.edu.cn/">川师官网</a>
-          <a class="links" href="http://jwc.sicnu.edu.cn/">川师教务处</a>
-          <a class="links" href="http://yz.kaoyan.com/sicnu/">川师研究生院</a>
-          <a class="links" href="http://zjc.sicnu.edu.cn/">川师招生就业信息</a>
-          <a class="links" href="http://www.lib.sicnu.edu.cn/"><i class="fa fa-book fa-fw"></i>&nbsp;川师图书馆主页</a>
-          <a class="links point" href="http://202.115.193.41:8080/opac/search/simsearch">书目检索</a>
-          <a class="links" href="http://gqt.sicnu.edu.cn/NewsShow.asp?id=15606">川师团委</a>
-          <a class="links" href="http://202.115.194.60/(S(d1n0yl3q3wvykw2ye5mvqmpf))/default.aspx">教务管理系统</a>
-          <a class="links" href="http://sicnu.benke.chaoxing.com/">尔雅通识课程学习系统</a>
-          <a class="links" href="http://www.zhihuishu.com/"><i class="fa fa-tree fa-fw"></i>&nbsp;智慧树课程学习系统</a>
-          <a class="links" href="http://202.115.194.53:8011/">考试报名系统</a>
-          <a class="links" href="http://202.115.194.62:8080/index.aspx"><i class="fa fa-file-text fa-fw"></i>&nbsp;毕业设计管理系统</a>
-          <a class="links" href="http://jwc.sicnu.edu.cn/InfoService/xksm.htm">学生选课系统</a>
-          <a class="links" href="http://classroom.sicnu.edu.cn/">教室查询及申请</a>
-          <a class="links" href="http://202.115.195.252:8060/">创新学分申请</a>
-          <a class="links" href="http://jwc.sicnu.edu.cn/InfoService/calender1617.html"><i class="fa fa-calendar-check-o fa-fw"></i>&nbsp;师大校历</a>
-          <a class="links" href="http://jwc.sicnu.edu.cn/indexxzzq.aspx"><i class="fa fa-table fa-fw"></i>&nbsp;常用表格下载</a>
-          <a class="links" href="http://tieba.baidu.com/f?kw=%CB%C4%B4%A8%CA%A6%B7%B6%B4%F3%D1%A7&fr=ala0&tpl=5">四川师范大学贴吧</a>
-          <a class="links" href="http://news.sicnu.edu.cn/page.php?id=4"><i class="fa fa-map-marker fa-fw"></i>&nbsp;校园地图</a>
-        </div>
-      </div>
-      <div id="other-entrance" class="entrance-content">
-        <div class="entrance-title">其他导航</div>
-        <div id="other-content">
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-knowledge" class="title-logo"></div>
-              <h2>知识</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="https://www.google.com.hk/">
-                <img class="item-logo" src="">
-                <span class="item-text">谷歌</span>
-              </a>
-              <a class="item" href="https://www.zhihu.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">知乎</span>
-              </a>
-              <a class="item" href="https://segmentfault.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">SegmentFault</span>
-              </a>
-              <a class="item" href="https://zh.wikipedia.org/">
-                <img class="item-logo" src="">
-                <span class="item-text">维基百科</span>
-              </a>
-              <a class="item last" href="http://www.guokr.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">果壳</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="http://zh.wikihow.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">WikiHow</span>
-                </a>
-                <a class="item" href="http://www.dxy.cn/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">丁香园</span>
-                </a>
-                <a class="item" href="https://zhidao.baidu.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">百度知道</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
+<head>
+  <title>CSR导航 | CSR</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="CSR,导航,快速导航,川师,四川师范大学">
+  <meta name="author" content="AQINGC">
+  <link rel="shortcut icon" href="images/navigation.ico" type="image/x-icon">
+  <link rel="icon" href="images/navigation.ico" type="image/x-icon">
+  <base target="_blank" />
+  <style>
+    *{font-family:Hiragino Sans GB;}body,div,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,li,ol,p,table,td,ul{margin:0;padding:0;border:0;}a{text-decoration:none;}ol,ul{list-style-type:none;}#content,#footer,#input,#method-option,#other-content,#search,#tips,.entrance-content{display:flex;}
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function detectMob() {
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        return true
+      } else {
+        return false
+      }
+    }
+    var head = document.getElementsByTagName('head')[0]
+    var link = document.createElement("link")
+    link.rel = 'stylesheet'
+    link.type = 'text/css'
 
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-code" class="title-logo"></div>
-              <h2>编程</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="https://stackoverflow.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">Stack Overflow</span>
-              </a>
-              <a class="item" href="https://github.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">GitHub</span>
-              </a>
-              <a class="item" href="https://www.csdn.net/">
-                <img class="item-logo" src="">
-                <span class="item-text">CSDN</span>
-              </a>
-              <a class="item" href="https://gold.xitu.io/">
-                <img class="item-logo" src="">
-                <span class="item-text">掘金</span>
-              </a>
-              <a class="item last" href="http://www.w3school.com.cn/">
-                <img class="item-logo" src="">
-                <span class="item-text">w3school</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="http://www.runoob.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">菜鸟教程</span>
-                </a>
-                <a class="item" href="http://www.imooc.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">慕课网</span>
-                </a>
-                <a class="item" href="http://www.jikexueyuan.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">极客学院</span>
-                </a> 
-                <a class="item" href="http://www.jb51.net/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">脚本之家</span>
-                </a> 
-                <a class="item" href="https://www.codewars.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">codewars</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
+    if (detectMob()) {
+      link.href = "./css/mob.css"
+    } else {
+      link.href = "./css/pc.css"
+    }
+    head.appendChild(link)
+  </script>
+</head>
 
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-social" class="title-logo"></div>
-              <h2>社交网络</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="http://www.weibo.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">新浪微博</span>
-              </a>
-              <a class="item" href="https://www.douban.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">豆瓣</span>
-              </a>
-              <a class="item" href="https://twitter.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">Twitter</span>
-              </a>
-              <a class="item" href="https://www.facebook.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">Facebook</span>
-              </a>
-              <a class="item last" href="https://wx.qq.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">微信网页版</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="https://tieba.baidu.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">百度贴吧</span>
-                </a>
-                <a class="item" href="http://www.jianshu.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">简书</span>
-                </a>
-                <a class="item" href="http://www.tianya.cn/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">天涯社区</span>
-                </a> 
-                <a class="item" href="https://www.linkedin.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">LinkedIn</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
-
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-shopping" class="title-logo"></div>
-              <h2>购物</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="https://www.taobao.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">淘宝</span>
-              </a>
-              <a class="item" href="https://www.jd.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">京东</span>
-              </a>
-              <a class="item" href="https://www.amazon.cn/">
-                <img class="item-logo" src="">
-                <span class="item-text">亚马逊</span>
-              </a>
-              <a class="item" href="https://www.tmall.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">天猫</span>
-              </a>
-              <a class="item last" href="http://www.vip.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">唯品会</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="http://bj.jumei.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">聚美优品</span>
-                </a>
-                <a class="item" href="http://www.mogujie.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">蘑菇街</span>
-                </a>
-                <a class="item" href="http://www.yhd.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">1号店</span>
-                </a> 
-                <a class="item" href="https://www.suning.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">苏宁易购</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
-
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-job" class="title-logo"></div>
-              <h2>求职</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="https://www.lagou.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">拉勾网</span>
-              </a>
-              <a class="item" href="http://www.zhaopin.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">智联招聘</span>
-              </a>
-              <a class="item" href="http://www.shixiseng.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">实习僧</span>
-              </a>
-              <a class="item" href="https://www.dajie.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">大街</span>
-              </a>
-              <a class="item last" href="http://www.51job.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">前程无忧</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="http://www.ciweishixi.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">刺猬实习</span>
-                </a>
-                <a class="item" href="http://www.zhipin.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">BOSS直聘</span>
-                </a>
-                <a class="item" href="http://www.kanzhun.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">看准网</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
-
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-video" class="title-logo"></div>
-              <h2>视频</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="http://www.youku.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">优酷</span>
-              </a>
-              <a class="item" href="https://www.youtube.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">YouTube</span>
-              </a>
-              <a class="item" href="http://www.iqiyi.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">爱奇艺</span>
-              </a>
-              <a class="item" href="https://www.bilibili.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">BiliBili</span>
-              </a>
-              <a class="item last" href="https://v.qq.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">腾讯视频</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="http://tv.sohu.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">搜狐视频</span>
-                </a>
-                <a class="item" href="http://www.le.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">乐视</span>
-                </a>
-                <a class="item" href="http://www.acfun.cn/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">AcFun</span>
-                </a> 
-                <a class="item" href="http://www.pptv.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">PPTV</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
-
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-picture" class="title-logo"></div>
-              <h2>图片</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="https://500px.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">500px</span>
-              </a>
-              <a class="item" href="https://www.instagram.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">Instagram</span>
-              </a>
-              <a class="item" href="http://www.nipic.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">昵图网</span>
-              </a>
-              <a class="item" href="http://www.topit.me/">
-                <img class="item-logo" src="">
-                <span class="item-text">优美图</span>
-              </a>
-              <a class="item last" href="https://www.flickr.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">Flickr</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="https://www.pinterest.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">Pinterest</span>
-                </a>
-                <a class="item" href="https://photos.google.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">GooglePhotos</span>
-                </a>
-                <a class="item" href="http://huaban.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">花瓣网</span>
-                </a> 
-                <a class="item" href="http://www.lanrentuku.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">懒人图库</span>
-                </a> 
-                <a class="item" href="http://skidanov.com/portfolio/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">Skidanov</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
-
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-film" class="title-logo"></div>
-              <h2>电影</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="https://movie.douban.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">豆瓣电影</span>
-              </a>
-              <a class="item" href="http://www.imdb.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">IMDb</span>
-              </a>
-              <a class="item" href="http://www.mtime.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">时光网</span>
-              </a>
-              <a class="item" href="https://www.rottentomatoes.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">烂番茄</span>
-              </a>
-              <a class="item last" href="http://pan.baidu.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">百度云</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="http://dianying.fm/discovery/tron-legacy/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">电影FM</span>
-                </a>
-                <a class="item" href="https://torrents.me/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">Torrents</span>
-                </a>
-              </div>  
-            </div>
-          </div>
-
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-music" class="title-logo"></div>
-              <h2>音乐</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="http://music.163.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">网易云音乐</span>
-              </a>
-              <a class="item" href="http://www.xiami.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">虾米音乐</span>
-              </a>
-              <a class="item" href="https://www.apple.com/cn/itunes/">
-                <img class="item-logo" src="">
-                <span class="item-text">iTunes</span>
-              </a>
-              <a class="item" href="https://y.qq.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">QQ音乐</span>
-              </a>
-              <a class="item last" href="https://music.douban.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">豆瓣音乐</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="https://soundcloud.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">SoundCloud</span>
-                </a>
-                <a class="item" href="https://bandcamp.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">bandcamp</span>
-                </a>
-                <a class="item" href="http://www.pandora.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">Pandora</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
-
-          <div class="catalog">
-            <div class="catalog-title">
-              <div id="title-travel" class="title-logo"></div>
-              <h2>出行</h2>
-            </div>
-            <div class="catalog-content">
-              <a class="item" href="http://www.ctrip.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">携程</span>
-              </a>
-              <a class="item" href="https://www.qunar.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">去哪儿</span>
-              </a>
-              <a class="item" href="http://www.dianping.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">大众点评</span>
-              </a>
-              <a class="item" href="https://www.airbnbchina.cn/">
-                <img class="item-logo" src="">
-                <span class="item-text">Airbnb</span>
-              </a>
-              <a class="item last" href="http://map.baidu.com/">
-                <img class="item-logo" src="">
-                <span class="item-text">百度地图</span>
-                <div class="overlay"></div>
-              </a>
-              <div class="extend focus-bg">
-                <a class="item" href="http://web.breadtrip.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">面包旅行</span>
-                </a>
-                <a class="item" href="http://chanyouji.com/">
-                  <img class="item-logo" src="">
-                  <span class="item-text">蝉游记</span>
-                </a>
-                <a class="item" href="http://www.google.cn/maps">
-                  <img class="item-logo" src="">
-                  <span class="item-text">谷歌地图</span>
-                </a> 
-              </div>  
-            </div>
-          </div>
-
+<body>
+  <div id="content">
+    <a id="github" href="https://github.com/AQingC/CSR-navigation"><i class="fa fa-github fa-1x"></i>&nbsp;GitHub</a>
+    <div id="logo"></div>
+    <div id="input">
+      <form id="search">
+        <input id="search-text" type="text" name="" placeholder="立即搜索" required autocomplete="off">
+        <input id="search-btn" type="submit" value="Search">
+      </form>
+      <div id="method-option">
+        <div id="method">搜索方式:</div>
+        <div id="options">
+          <label class="radio-label"><input type="radio" name="option" value="baidu" checked>百度</label>
+          <label class="radio-label"><input type="radio" name="option" value="google">谷歌</label>
+          <label class="radio-label"><input type="radio" name="option" value="bing">必应</label>
+          <label class="radio-label"><input type="radio" name="option" value="weibo">微博</label>
+          <label class="radio-label"><input type="radio" name="option" value="zhihu">知乎</label>
+          <label class="radio-label"><input type="radio" name="option" value="douban">豆瓣</label>
+          <label class="radio-label"><input type="radio" name="option" value="panci">胖次</label>
         </div>
       </div>
     </div>
-
-    <div id="footer">
-      <p id="disc">希望CSR导航可以为你的搜索带来方便&nbsp;&gt;&#183;&lt;&nbsp;&nbsp;(建议在桌面电脑上使用)</p>
-      <p id="copyright">&copy; CSR Navigation&nbsp;&nbsp;
-        <a href="https://github.com/AQingC">AQingC</a>
-      </p>
-      <p id="date">Since 2016</p>
+    <div id="tips">
+      <p id="line-one">Tips：输入关键词，选择搜索方式，点击Search即可搜索。</p>
+      <p id="line-two">回车默认为百度搜索。</p>
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+  </div>
+
+  <div id="entrance">
+    <div id="school-entrance" class="entrance-content">
+      <div class="entrance-title">川师校园</div>
+      <div id="school-content">
+        <a class="links point" href="http://www.sicnu.edu.cn/">川师官网</a>
+        <a class="links" href="http://jwc.sicnu.edu.cn/">川师教务处</a>
+        <a class="links" href="http://yz.kaoyan.com/sicnu/">川师研究生院</a>
+        <a class="links" href="http://zjc.sicnu.edu.cn/">川师招生就业信息</a>
+        <a class="links" href="http://www.lib.sicnu.edu.cn/"><i class="fa fa-book fa-fw"></i>&nbsp;川师图书馆主页</a>
+        <a class="links point" href="http://202.115.193.41:8080/opac/search/simsearch">书目检索</a>
+        <a class="links" href="http://gqt.sicnu.edu.cn/NewsShow.asp?id=15606">川师团委</a>
+        <a class="links" href="http://202.115.194.60/(S(d1n0yl3q3wvykw2ye5mvqmpf))/default.aspx">教务管理系统</a>
+        <a class="links" href="http://sicnu.benke.chaoxing.com/">尔雅通识课程学习系统</a>
+        <a class="links" href="http://www.zhihuishu.com/"><i class="fa fa-tree fa-fw"></i>&nbsp;智慧树课程学习系统</a>
+        <a class="links" href="http://202.115.194.53:8011/">考试报名系统</a>
+        <a class="links" href="http://202.115.194.62:8080/index.aspx"><i class="fa fa-file-text fa-fw"></i>&nbsp;毕业设计管理系统</a>
+        <a class="links" href="http://jwc.sicnu.edu.cn/InfoService/xksm.htm">学生选课系统</a>
+        <a class="links" href="http://classroom.sicnu.edu.cn/">教室查询及申请</a>
+        <a class="links" href="http://202.115.195.252:8060/">创新学分申请</a>
+        <a class="links" href="http://jwc.sicnu.edu.cn/InfoService/calender1617.html"><i class="fa fa-calendar-check-o fa-fw"></i>&nbsp;师大校历</a>
+        <a class="links" href="http://jwc.sicnu.edu.cn/indexxzzq.aspx"><i class="fa fa-table fa-fw"></i>&nbsp;常用表格下载</a>
+        <a class="links" href="http://tieba.baidu.com/f?kw=%CB%C4%B4%A8%CA%A6%B7%B6%B4%F3%D1%A7&fr=ala0&tpl=5">四川师范大学贴吧</a>
+        <a class="links" href="http://news.sicnu.edu.cn/page.php?id=4"><i class="fa fa-map-marker fa-fw"></i>&nbsp;校园地图</a>
+      </div>
+    </div>
+    <div id="other-entrance" class="entrance-content">
+      <div class="entrance-title">其他导航</div>
+      <div id="other-content">
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-knowledge" class="title-logo"></div>
+            <h2>知识</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="https://www.google.com.hk/">谷歌</a>
+            <a class="item" href="https://www.zhihu.com/">知乎</a>
+            <a class="item" href="https://segmentfault.com/">SegmentFault</a>
+            <a class="item" href="https://zh.wikipedia.org/">维基百科</a>
+            <a class="item last" href="http://www.guokr.com/">
+              果壳
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="http://zh.wikihow.com/">WikiHow</a>
+              <a class="item" href="http://www.dxy.cn/">丁香园</a>
+              <a class="item" href="https://zhidao.baidu.com/">百度知道</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-code" class="title-logo"></div>
+            <h2>编程</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="https://stackoverflow.com/">Stack Overflow</a>
+            <a class="item" href="https://github.com/">GitHub</a>
+            <a class="item" href="https://www.csdn.net/">CSDN</a>
+            <a class="item" href="https://gold.xitu.io/">掘金</a>
+            <a class="item last" href="http://www.w3school.com.cn/">
+              w3school
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="http://www.runoob.com/">菜鸟教程</a>
+              <a class="item" href="http://www.imooc.com/">慕课网</a>
+              <a class="item" href="http://www.jikexueyuan.com/">极客学院</a>
+              <a class="item" href="http://www.jb51.net/">脚本之家</a>
+              <a class="item" href="https://www.codewars.com/">codewars</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-social" class="title-logo"></div>
+            <h2>社交网络</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="http://www.weibo.com/">新浪微博</a>
+            <a class="item" href="https://www.douban.com/">豆瓣</a>
+            <a class="item" href="https://twitter.com/">Twitter</a>
+            <a class="item" href="https://www.facebook.com/">Facebook</a>
+            <a class="item last" href="https://wx.qq.com/">
+              微信网页版
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="https://tieba.baidu.com/">百度贴吧</a>
+              <a class="item" href="http://www.jianshu.com/">简书</a>
+              <a class="item" href="http://www.tianya.cn/">天涯社区</a>
+              <a class="item" href="https://www.linkedin.com/">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-shopping" class="title-logo"></div>
+            <h2>购物</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="https://www.taobao.com/">淘宝</a>
+            <a class="item" href="https://www.jd.com/">京东</a>
+            <a class="item" href="https://www.amazon.cn/">亚马逊</a>
+            <a class="item" href="https://www.tmall.com/">天猫</a>
+            <a class="item last" href="http://www.vip.com/">
+              唯品会
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="http://bj.jumei.com/">聚美优品</a>
+              <a class="item" href="http://www.mogujie.com/">蘑菇街</a>
+              <a class="item" href="http://www.yhd.com/">1号店</a>
+              <a class="item" href="https://www.suning.com/">苏宁易购</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-job" class="title-logo"></div>
+            <h2>求职</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="https://www.lagou.com/">拉勾网</a>
+            <a class="item" href="http://www.zhaopin.com/">智联招聘</a>
+            <a class="item" href="http://www.shixiseng.com/">实习僧</a>
+            <a class="item" href="https://www.dajie.com/">大街</a>
+            <a class="item last" href="http://www.51job.com/">
+              前程无忧
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="http://www.ciweishixi.com/">刺猬实习</a>
+              <a class="item" href="http://www.zhipin.com/">BOSS直聘</a>
+              <a class="item" href="http://www.kanzhun.com/">看准网</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-video" class="title-logo"></div>
+            <h2>视频</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="http://www.youku.com/">优酷</a>
+            <a class="item" href="https://www.youtube.com/">YouTube</a>
+            <a class="item" href="http://www.iqiyi.com/">爱奇艺</a>
+            <a class="item" href="https://www.bilibili.com/">bilibili</a>
+            <a class="item last" href="https://v.qq.com/">
+              腾讯视频
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="http://tv.sohu.com/">搜狐视频</a>
+              <a class="item" href="http://www.le.com/">乐视</a>
+              <a class="item" href="http://www.acfun.cn/">AcFun</a>
+              <a class="item" href="http://www.pptv.com/">PPTV</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-picture" class="title-logo"></div>
+            <h2>图片</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="https://500px.com/">500px</a>
+            <a class="item" href="https://www.instagram.com/">Instagram</a>
+            <a class="item" href="http://www.nipic.com/">昵图网</a>
+            <a class="item" href="http://www.topit.me/">优美图</a>
+            <a class="item last" href="https://www.flickr.com/">
+              Flickr
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="https://www.pinterest.com/">Pinterest</a>
+              <a class="item" href="https://photos.google.com/">GooglePhotos</a>
+              <a class="item" href="http://huaban.com/">花瓣网</a>
+              <a class="item" href="http://www.lanrentuku.com/">懒人图库</a>
+              <a class="item" href="http://skidanov.com/portfolio/">Skidanov</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-film" class="title-logo"></div>
+            <h2>电影</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="https://movie.douban.com/">豆瓣电影</a>
+            <a class="item" href="http://www.imdb.com/">IMDb</a>
+            <a class="item" href="http://www.mtime.com/">时光网</a>
+            <a class="item" href="https://www.rottentomatoes.com/">烂番茄</a>
+            <a class="item last" href="http://pan.baidu.com/">
+              百度云
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="http://dianying.fm/discovery/tron-legacy/">电影FM</a>
+              <a class="item" href="https://torrents.me/">Torrents</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-music" class="title-logo"></div>
+            <h2>音乐</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="http://music.163.com/">网易云音乐</a>
+            <a class="item" href="http://www.xiami.com/">虾米音乐</a>
+            <a class="item" href="https://www.apple.com/cn/itunes/">iTunes</a>
+            <a class="item" href="https://y.qq.com/">QQ音乐</a>
+            <a class="item last" href="https://music.douban.com/">
+              豆瓣音乐
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="https://soundcloud.com/">SoundCloud</a>
+              <a class="item" href="https://bandcamp.com/">bandcamp</a>
+              <a class="item" href="http://www.pandora.com/">Pandora</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <i class="unfold fa fa-unsorted"></i>
+          <div class="catalog-title">
+            <div id="title-travel" class="title-logo"></div>
+            <h2>出行</h2>
+          </div>
+          <div class="catalog-content">
+            <a class="item" href="http://www.ctrip.com/">携程</a>
+            <a class="item" href="https://www.qunar.com/">去哪儿</a>
+            <a class="item" href="http://www.dianping.com/">大众点评</a>
+            <a class="item" href="https://www.airbnbchina.cn/">Airbnb</a>
+            <a class="item last" href="http://map.baidu.com/">
+              百度地图
+              <div class="overlay"></div>
+            </a>
+            <div class="extend focus-bg">
+              <a class="item" href="http://web.breadtrip.com/">面包旅行</a>
+              <a class="item" href="http://chanyouji.com/">蝉游记</a>
+              <a class="item" href="http://www.google.cn/maps">谷歌地图</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p id="disc">希望CSR导航可以为你的搜索带来方便&nbsp;建议在桌面电脑使用&nbsp;&gt;&#183;&lt;</p>
+    <p id="copyright">&copy; CSR Navigation&nbsp;&nbsp;
+      <a href="https://github.com/AQingC">AQingC</a>
+    </p>
+    <p id="date">Since 2016</p>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
