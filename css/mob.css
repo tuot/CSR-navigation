@@ -1,3 +1,11 @@
+#logo {
+  width: 160px;
+  height: 114px; 
+  background-image: url("../images/logo-sm.png");
+}
+#github span {
+  display: none;
+}
 #input {
   width: 80%;
 }
@@ -14,7 +22,7 @@
   display: none;
 }
 .unfold {
-  display: block!important;
+  display: block;
 }
 .extend {
   display: block;

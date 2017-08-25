@@ -22,9 +22,6 @@
 }
 
 #logo {
-  width: 360px;
-  height: 168px; 
-  background-image: url("../images/logo.png");
   background-repeat:no-repeat; 
   background-size:100% 100%;
   -moz-background-size:100% 100%;
@@ -168,11 +165,19 @@
   width: 100%;
   padding: 15px 0; 
   text-align: center; 
+  position: relative;
 }
 .title-logo, .catalog-title h2 {
   display: inline-block;
   vertical-align: middle;
   vertical-align: -webkit-baseline-middle;
+}
+.unfold i {
+  color: #555;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 .item {
   display: block;
@@ -185,12 +190,6 @@
 
 .catalog-content, .extend {
   width: 100%;
-}
-.unfold {
-  color: #555;
-  position: absolute;
-  right: 20px;
-  display: none!important;
 }
 .extend {
   display: none;

@@ -98,10 +98,7 @@ var catalogObj = (function() {
       overlayObj.focus(index)
     },
     catalogBlur: function(index) {
-      catalogs[index].className = catalogs[index].className.replace(
-        /\sfocus-bg/,
-        ""
-      )
+      catalogs[index].className = catalogs[index].className.replace(/\sfocus-bg/, "")
       overlayObj.normalize(index)
     }
   }
@@ -113,10 +110,7 @@ var overlayObj = (function() {
   return {
     normalize: function(index) {
       overlays[index].style.display = "inline-block"
-      overlays[index].className = overlays[index].className.replace(
-        /\soverlay-focus/,
-        ""
-      )
+      overlays[index].className = overlays[index].className.replace(/\soverlay-focus/, "")
     },
     focus: function(index) {
       overlays[index].style.display = "inline-block"
@@ -201,6 +195,19 @@ var cataContentObj = (function () {
   }
 })()
 
+var foldObj = (function () {
+  var folds = document.getElementsByClassName('unfold')
+
+  return {
+    setShowing: function (i) {
+      folds[i].style.display = "block"
+    },
+    setHidden: function (i) {
+      folds[i].style.display = "none"
+    }
+  }
+})()
+
 var cataTitleObj = (function () {
   var cataTitle = document.getElementsByClassName('catalog-title')
 
@@ -211,8 +218,10 @@ var cataTitleObj = (function () {
           cataTitle[index].addEventListener("click", function() {
             if (cataContentObj.isShowing(index)) {
               cataContentObj.setHidden(index)
+              foldObj.setShowing(index)
             } else {
               cataContentObj.setShowing(index)
+              foldObj.setHidden(index)
             }
           })
         })(i)

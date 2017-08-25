@@ -1,3 +1,11 @@
+#logo {
+  width: 235px;
+  height: 168px; 
+  background-image: url("../images/logo.png");
+}
+.unfold {
+  display: none;
+}
 #github:hover {
   color: #A4C4BF;
 }
