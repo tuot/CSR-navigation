@@ -3,7 +3,6 @@ var searchTool = {
     var searchStrArr = [
       "https://www.baidu.com/s?ie=UTF-8&wd=",
       "https://www.google.com.hk/?gws_rd=ssl#safe=strict&q=",
-      "http://cn.bing.com/search?q=",
       "http://s.weibo.com/weibo/",
       "https://www.zhihu.com/search?type=content&q=",
       "https://www.douban.com/search?q=",
@@ -20,7 +19,6 @@ var searchTool = {
       var url = this.generateURL(optionObj.getOption())
       window.open(url)
     }
-    textObj.setTextValue("")
   }
 }
 
@@ -231,10 +229,10 @@ var cataTitleObj = (function () {
 })()
 
 window.onload = function () {
+  formObj.bindEvent()
   if (detectMob()) {
     cataTitleObj.bindEvent()
   } else {
-    formObj.bindEvent()
     textObj.bindEvent()
     catalogObj.bindEvent()
     lastItemObj.bindEvent()

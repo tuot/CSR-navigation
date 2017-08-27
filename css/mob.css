@@ -13,6 +13,7 @@
   margin-right: 5px;
 }
 #method-option {
+  justify-content: space-between;
   width: 90%;
 }
 #options {

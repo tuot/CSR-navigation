@@ -70,7 +70,7 @@
 
 #method-option {
   width: 530px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   margin: 10px 0;
 }
@@ -281,6 +281,7 @@
     margin-right: 5px;
   }
   #method-option {
+    justify-content: space-between;
     width: 90%;
   }
   #options {
