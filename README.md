@@ -18,5 +18,4 @@
   面向对象，JavaScript代码进行了封装
      
 ### 最后   
-* CSR-navigation就是一个简单的导航网站，希望也能为你的搜索提供方便~   
-访问戳：[CSR-navigation](http://csren.cc/)
+* CSR-navigation就是一个简单的导航网站，希望也能为你的搜索提供方便~
